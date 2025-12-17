@@ -19,8 +19,6 @@
 --nodes 192.168.122.247:8001,192.168.122.169:8002,192.168.122.163:8003,192.168.122.193:8004,192.168.122.233:8005 -- repl
 """
 
-
-
 import argparse, socket, time, threading, random, statistics, sys
 from typing import List, Tuple
 
@@ -186,4 +184,3 @@ if __name__ == '__main__':
         action_bench(nodes, args.ops, args.key, args.put_ratio)
     elif args.mode == 'repl':
         action_repl(nodes)
-
